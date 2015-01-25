@@ -7,10 +7,9 @@ body {
 .jumbotron {
   background-color: inherit;
 
-  background-image: url("pictures/kite_blue.gif");
+  background-image: url("pictures/ThreeKitesHHI.jpg");
   background-repeat: no-repeat;
-  background-position: right top;
-  background-size: 15% auto;
+  /*background-position: right top; */
 }
 
 /*.jumbotron .container {

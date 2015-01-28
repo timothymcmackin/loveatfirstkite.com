@@ -36,13 +36,13 @@ h6 {
     text-align: center;
     color: #f8f8f8;
     background: url(../pictures/ThreeKitesHHIFullCrop.jpg) no-repeat center center;
-    background-size: cover;
+    background-size: contain;
 }
 
 .intro-message {
     position: relative;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    padding-top: 15%;
+    padding-bottom: 15%;
     text-align: left;
 }
 

@@ -9,3 +9,4 @@ ul li {
 ul li img {
   cursor: pointer;
 }
+legend { margin:3px; text-align:center; width:100%}

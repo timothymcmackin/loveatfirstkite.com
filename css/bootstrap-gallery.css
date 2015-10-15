@@ -9,4 +9,13 @@ ul li {
 ul li img {
   cursor: pointer;
 }
-legend { margin:3px; text-align:center; width:100%}
+legend { margin:3px; text-align:center; width:100% ; font-size: medium}
+
+body {
+  padding-top: 100px;
+}
+@media {
+  body {
+    padding-top: 100px;
+  }
+}

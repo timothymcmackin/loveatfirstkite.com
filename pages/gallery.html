@@ -144,7 +144,7 @@ aria-labelledby="myModalLabel" aria-hidden="true">
               html += '<div style="height:25px;clear:both;display:block;">';
               html += '<a class="controls next" href="'+ (index+2) + '">next &raquo;</a>';
               html += '<a class="controls previous" href="' + (index) + '">&laquo; prev</a>';
-              html += '<p align="center">' + (legend) + '</p>';
+              html += '<p align="center" id="legendtext"></p>';
               html += '</div>';
 
               $('#myModal').modal();
@@ -152,6 +152,7 @@ aria-labelledby="myModalLabel" aria-hidden="true">
                   $('#myModal .modal-body').html(html);
                   //new code
                   $('a.controls').trigger('click');
+                  $('#legendtext').text(legend);
               })
               $('#myModal').on('hidden.bs.modal', function(){
                   $('#myModal .modal-body').html('');
@@ -173,6 +174,9 @@ aria-labelledby="myModalLabel" aria-hidden="true">
 
           var newPrevIndex = parseInt(index) - 1;
           var newNextIndex = parseInt(newPrevIndex) + 2;
+
+          var legend = $('ul.row li:nth-child('+ index +') img').next().text();
+          $('#legendtext').text(legend);
 
           if($(this).hasClass('previous')){
               $(this).attr('href', newPrevIndex);

@@ -117,6 +117,10 @@ aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-content">
       <div class="modal-body">
       </div>
+      <div class="legend-body">
+      </div>
+      <div class="controls-body">
+      </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
@@ -141,18 +145,23 @@ aria-labelledby="myModalLabel" aria-hidden="true">
 
               var html = '';
               html += img;
-              html += '<div style="height:25px;clear:both;display:block;">';
-              html += '<a class="controls next" href="'+ (index+2) + '">next &raquo;</a>';
-              html += '<a class="controls previous" href="' + (index) + '">&laquo; prev</a>';
-              html += '<p align="center" id="legendtext"></p>';
+              html += '<div style="clear:both;display:block;">';
+              //html += '<p align="center" id="legendtext"></p>';
               html += '</div>';
+
+              var legendHTML = '<p id="legendtext"></p>';
+
+              var controls = '<p><a class="controls previous" href="' + (index) + '">&laquo; prev</a>';
+              controls += '<a class="controls next" href="'+ (index+2) + '">next &raquo;</a></p>';
 
               $('#myModal').modal();
               $('#myModal').on('shown.bs.modal', function(){
                   $('#myModal .modal-body').html(html);
+                  $('#myModal .legend-body').html(legendHTML);
                   //new code
                   $('a.controls').trigger('click');
                   $('#legendtext').text(legend);
+                  $('#myModal .controls-body').html(controls);
               })
               $('#myModal').on('hidden.bs.modal', function(){
                   $('#myModal .modal-body').html('');

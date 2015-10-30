@@ -8,8 +8,12 @@ ul li {
 }
 ul li img {
   cursor: pointer;
+  max-height:100px;
 }
 legend { margin:3px; text-align:center; width:100% ; font-size: medium}
+
+img.gallery-main-image{
+}
 
 body {
   padding-top: 100px;

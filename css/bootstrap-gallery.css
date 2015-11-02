@@ -32,3 +32,8 @@ a.controls {
     padding-top: 100px;
   }
 }
+
+.next{
+  float:right;
+  text-align:right;
+}

@@ -1,36 +1,29 @@
-<!-- Sample by Mr. M. - Confederation College - IMD Program -->
-<!-- http://bootsnipp.com/snippets/featured/thumbnails-2-popups-with-tb-modals -->
-
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
+  <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Photos from Puerto Rico</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
-    <!-- Bootstrap Core CSS -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
-    <!-- Custom CSS -->
-    <link href="../css/custom_pages.css" rel="stylesheet">
-    <link href="../css/landing-page.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link href="../css/jquery.bsPhotoGallery-min.css" rel="stylesheet">
+    <script src="../js/jquery.bsPhotoGallery-min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('ul.first').bsPhotoGallery({
+          "classes" : "col-xl-3 col-lg-2 col-md-4 col-sm-4",
+          "hasModal" : true,
+          "shortText" : false
+        });
+      });
+    </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113868645-1"></script>
@@ -41,458 +34,129 @@
 
       gtag('config', 'UA-113868645-1');
     </script>
-
-<style type="text/css">
-.thumb {
-  padding: 10px;
-}
-.expanded {
-}
-</style>
-
-</head>
-
-<div class="container">
-
-<div class="row">
-
-<h3>Photos from Tim and Julie's trip to San Juan, Puerto Rico</h3>
-<hr>
-<!--
-Thumbnail link for mixer image
-NOTE: data-target is .pop-up-1 for mixer, and .pop-up-2 for lion, these
-classes must be unique
--->
-
-<a href="#" data-toggle="modal" data-target=".IMG_20170325_134840997_HDR">
-<img src="../pictures/puertorico/IMG_20170325_134840997_HDR_t.jpg" width="150" class="img-responsive img-rounded center-block thumb col-lg-2 col-md-3 col-sm-3 col-xs-6" alt="">
-</a>
-
-<a href="#" data-toggle="modal" data-target=".IMG_20170325_180158290_HDR">
-<img src="../pictures/puertorico/IMG_20170325_180158290_HDR_t.jpg" width="150" class="img-responsive img-rounded center-block thumb col-lg-2 col-md-3 col-sm-3 col-xs-6" alt="">
-</a>
-
-<a href="#" data-toggle="modal" data-target=".IMG_20170325_225903878">
-<img src="../pictures/puertorico/IMG_20170325_225903878_t.jpg" width="150" class="img-responsive img-rounded center-block thumb col-lg-2 col-md-3 col-sm-3 col-xs-6" alt="">
-</a>
-
-<a href="#" data-toggle="modal" data-target=".IMG_20170326_101453311">
-<img src="../pictures/puertorico/IMG_20170326_101453311_t.jpg" width="150" class="img-responsive img-rounded center-block thumb col-lg-2 col-md-3 col-sm-3 col-xs-6" alt="">
-</a>
-
-<a href="#" data-toggle="modal" data-target=".IMG_20170326_120611750">
-<img src="../pictures/puertorico/IMG_20170326_120611750_t.jpg" width="150" class="img-responsive img-rounded center-block thumb col-lg-2 col-md-3 col-sm-3 col-xs-6" alt="">
-</a>
-
-<a href="#" data-toggle="modal" data-target=".IMG_20170326_123906138">
-<img src="../pictures/puertorico/IMG_20170326_123906138_t.jpg" width="150" class="img-responsive img-rounded center-block thumb col-lg-2 col-md-3 col-sm-3 col-xs-6" alt="">
-</a>
-
-<a href="#" data-toggle="modal" data-target=".IMG_20170326_171707334">
-<img src="../pictures/puertorico/IMG_20170326_171707334_t.jpg" width="150" class="img-responsive img-rounded center-block thumb col-lg-2 col-md-3 col-sm-3 col-xs-6" alt="">
-</a>
-
-<a href="#" data-toggle="modal" data-target=".IMG_20170327_101048234">
-<img src="../pictures/puertorico/IMG_20170327_101048234_t.jpg" width="150" class="img-responsive img-rounded center-block thumb col-lg-2 col-md-3 col-sm-3 col-xs-6" alt="">
-</a>
-
-<a href="#" data-toggle="modal" data-target=".IMG_20170327_103009989">
-<img src="../pictures/puertorico/IMG_20170327_103009989_t.jpg" width="150" class="img-responsive img-rounded center-block thumb col-lg-2 col-md-3 col-sm-3 col-xs-6" alt="">
-</a>
-
-<a href="#" data-toggle="modal" data-target=".IMG_20170327_103110328_HDR">
-<img src="../pictures/puertorico/IMG_20170327_103110328_HDR_t.jpg" width="150" class="img-responsive img-rounded center-block thumb col-lg-2 col-md-3 col-sm-3 col-xs-6" alt="">
-</a>
-
-<a href="#" data-toggle="modal" data-target=".IMG_20170327_111851321">
-<img src="../pictures/puertorico/IMG_20170327_111851321_t.jpg" width="150" class="img-responsive img-rounded center-block thumb col-lg-2 col-md-3 col-sm-3 col-xs-6" alt="">
-</a>
-
-<a href="#" data-toggle="modal" data-target=".IMG_20170327_194515537">
-<img src="../pictures/puertorico/IMG_20170327_194515537_t.jpg" width="150" class="img-responsive img-rounded center-block thumb col-lg-2 col-md-3 col-sm-3 col-xs-6" alt="">
-</a>
-
-<a href="#" data-toggle="modal" data-target=".IMG_20170327_211814143">
-<img src="../pictures/puertorico/IMG_20170327_211814143_t.jpg" width="150" class="img-responsive img-rounded center-block thumb col-lg-2 col-md-3 col-sm-3 col-xs-6" alt="">
-</a>
-
-<a href="#" data-toggle="modal" data-target=".IMG_20170328_104740719">
-<img src="../pictures/puertorico/IMG_20170328_104740719_t.jpg" width="150" class="img-responsive img-rounded center-block thumb col-lg-2 col-md-3 col-sm-3 col-xs-6" alt="">
-</a>
-
-<a href="#" data-toggle="modal" data-target=".IMG_20170328_111744232_HDR">
-<img src="../pictures/puertorico/IMG_20170328_111744232_HDR_t.jpg" width="150" class="img-responsive img-rounded center-block thumb col-lg-2 col-md-3 col-sm-3 col-xs-6" alt="">
-</a>
-
-<a href="#" data-toggle="modal" data-target=".IMG_20170328_163134682_HDR">
-<img src="../pictures/puertorico/IMG_20170328_163134682_HDR_t.jpg" width="150" class="img-responsive img-rounded center-block thumb col-lg-2 col-md-3 col-sm-3 col-xs-6" alt="">
-</a>
-
-<a href="#" data-toggle="modal" data-target=".IMG_20170328_163243195">
-<img src="../pictures/puertorico/IMG_20170328_163243195_t.jpg" width="150" class="img-responsive img-rounded center-block thumb col-lg-2 col-md-3 col-sm-3 col-xs-6" alt="">
-</a>
-
-<a href="#" data-toggle="modal" data-target=".IMG_20170328_171307769">
-<img src="../pictures/puertorico/IMG_20170328_171307769_t.jpg" width="150" class="img-responsive img-rounded center-block thumb col-lg-2 col-md-3 col-sm-3 col-xs-6" alt="">
-</a>
-
-<a href="#" data-toggle="modal" data-target=".IMG_20170329_082000468">
-<img src="../pictures/puertorico/IMG_20170329_082000468_t.jpg" width="150" class="img-responsive img-rounded center-block thumb col-lg-2 col-md-3 col-sm-3 col-xs-6" alt="">
-</a>
-
-<a href="#" data-toggle="modal" data-target=".IMG_20170329_101252824_HDR">
-<img src="../pictures/puertorico/IMG_20170329_101252824_HDR_t.jpg" width="150" class="img-responsive img-rounded center-block thumb col-lg-2 col-md-3 col-sm-3 col-xs-6" alt="">
-</a>
-
-<a href="#" data-toggle="modal" data-target=".IMG_20170329_225554938">
-<img src="../pictures/puertorico/IMG_20170329_225554938_t.jpg" width="150" class="img-responsive img-rounded center-block thumb col-lg-2 col-md-3 col-sm-3 col-xs-6" alt="">
-</a>
-
-<a href="#" data-toggle="modal" data-target=".IMG_7708">
-<img src="../pictures/puertorico/IMG_7708_t.JPG" width="150" class="img-responsive img-rounded center-block thumb col-lg-2 col-md-3 col-sm-3 col-xs-6" alt="">
-</a>
-
-
-<hr>
-
-  <div class="modal fade IMG_20170325_134840997_HDR" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-          <h4 class="modal-title" id="myLargeModalLabel-1">Airplane lunch picnic!</h4>
-        </div>
-        <div class="modal-body">
-        <img src="../pictures/puertorico/IMG_20170325_134840997_HDR.jpg" class="img-responsive img-rounded center-block expanded" alt="">
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal mixer image -->
-
-  <div class="modal fade IMG_20170325_180158290_HDR" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-          <h4 class="modal-title" id="myLargeModalLabel-1">The view from our apartment, just after we got there</h4>
-        </div>
-        <div class="modal-body">
-        <img src="../pictures/puertorico/IMG_20170325_180158290_HDR.jpg" class="img-responsive img-rounded center-block expanded" alt="">
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal mixer image -->
-
-  <div class="modal fade IMG_20170325_225903878" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-          <h4 class="modal-title" id="myLargeModalLabel-1">Evening music party</h4>
-        </div>
-        <div class="modal-body">
-        <img src="../pictures/puertorico/IMG_20170325_225903878.jpg" class="img-responsive img-rounded center-block expanded" alt="">
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal mixer image -->
-
-  <div class="modal fade IMG_20170326_101453311" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-          <h4 class="modal-title" id="myLargeModalLabel-1">Julie looking out the window</h4>
-        </div>
-        <div class="modal-body">
-        <img src="../pictures/puertorico/IMG_20170326_101453311.jpg" class="img-responsive img-rounded center-block expanded" alt="">
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal mixer image -->
-
-  <div class="modal fade IMG_20170326_120611750" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-          <h4 class="modal-title" id="myLargeModalLabel-1">Flying kites at the fortress</h4>
-        </div>
-        <div class="modal-body">
-        <img src="../pictures/puertorico/IMG_20170326_120611750.jpg" class="img-responsive img-rounded center-block expanded" alt="">
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal mixer image -->
-
-  <div class="modal fade IMG_20170326_123906138" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-          <h4 class="modal-title" id="myLargeModalLabel-1">Flying kites at the fortress</h4>
-        </div>
-        <div class="modal-body">
-        <img src="../pictures/puertorico/IMG_20170326_123906138.jpg" class="img-responsive img-rounded center-block expanded" alt="">
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal mixer image -->
-
-  <div class="modal fade IMG_20170326_171707334" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-          <h4 class="modal-title" id="myLargeModalLabel-1">One of the colorful streets of San Juan</h4>
-        </div>
-        <div class="modal-body">
-        <img src="../pictures/puertorico/IMG_20170326_171707334.jpg" class="img-responsive img-rounded center-block expanded" alt="">
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal mixer image -->
-
-  <div class="modal fade IMG_20170327_101048234" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-          <h4 class="modal-title" id="myLargeModalLabel-1">Lovely flowers from our apartment</h4>
-        </div>
-        <div class="modal-body">
-        <img src="../pictures/puertorico/IMG_20170327_101048234.jpg" class="img-responsive img-rounded center-block expanded" alt="">
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal mixer image -->
-
-  <div class="modal fade IMG_20170327_103009989" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-          <h4 class="modal-title" id="myLargeModalLabel-1">The view from breakfast</h4>
-        </div>
-        <div class="modal-body">
-        <img src="../pictures/puertorico/IMG_20170327_103009989.jpg" class="img-responsive img-rounded center-block expanded" alt="">
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal mixer image -->
-
-  <div class="modal fade IMG_20170327_103110328_HDR" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-          <h4 class="modal-title" id="myLargeModalLabel-1">The view from our rooftop breakfast</h4>
-        </div>
-        <div class="modal-body">
-        <img src="../pictures/puertorico/IMG_20170327_103110328_HDR.jpg" class="img-responsive img-rounded center-block expanded" alt="">
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal mixer image -->
-
-  <div class="modal fade IMG_20170327_111851321" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-          <h4 class="modal-title" id="myLargeModalLabel-1">Another colorful street</h4>
-        </div>
-        <div class="modal-body">
-        <img src="../pictures/puertorico/IMG_20170327_111851321.jpg" class="img-responsive img-rounded center-block expanded" alt="">
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal mixer image -->
-
-  <div class="modal fade IMG_20170327_194515537" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-          <h4 class="modal-title" id="myLargeModalLabel-1">Our view at night</h4>
-        </div>
-        <div class="modal-body">
-        <img src="../pictures/puertorico/IMG_20170327_194515537.jpg" class="img-responsive img-rounded center-block expanded" alt="">
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal mixer image -->
-
-  <div class="modal fade IMG_20170327_211814143" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-          <h4 class="modal-title" id="myLargeModalLabel-1">Julie looking stylish outside the best bar in Puerto Rico</h4>
-        </div>
-        <div class="modal-body">
-        <img src="../pictures/puertorico/IMG_20170327_211814143.jpg" class="img-responsive img-rounded center-block expanded" alt="">
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal mixer image -->
-
-  <div class="modal fade IMG_20170328_104740719" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-          <h4 class="modal-title" id="myLargeModalLabel-1">Paletas!</h4>
-        </div>
-        <div class="modal-body">
-        <img src="../pictures/puertorico/IMG_20170328_104740719.jpg" class="img-responsive img-rounded center-block expanded" alt="">
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal mixer image -->
-
-  <div class="modal fade IMG_20170328_111744232_HDR" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-          <h4 class="modal-title" id="myLargeModalLabel-1">Julie and Tim at the fortress</h4>
-        </div>
-        <div class="modal-body">
-        <img src="../pictures/puertorico/IMG_20170328_111744232_HDR.jpg" class="img-responsive img-rounded center-block expanded" alt="">
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal mixer image -->
-
-  <div class="modal fade IMG_20170328_163134682_HDR" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-          <h4 class="modal-title" id="myLargeModalLabel-1">Julie and Tim at the beach</h4>
-        </div>
-        <div class="modal-body">
-        <img src="../pictures/puertorico/IMG_20170328_163134682_HDR.jpg" class="img-responsive img-rounded center-block expanded" alt="">
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal mixer image -->
-
-  <div class="modal fade IMG_20170328_163243195" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-          <h4 class="modal-title" id="myLargeModalLabel-1">Julie at the beach</h4>
-        </div>
-        <div class="modal-body">
-        <img src="../pictures/puertorico/IMG_20170328_163243195.jpg" class="img-responsive img-rounded center-block expanded" alt="">
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal mixer image -->
-
-  <div class="modal fade IMG_20170328_171307769" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-          <h4 class="modal-title" id="myLargeModalLabel-1">We got caught in the rain and met these wild chickens</h4>
-        </div>
-        <div class="modal-body">
-        <img src="../pictures/puertorico/IMG_20170328_171307769.jpg" class="img-responsive img-rounded center-block expanded" alt="">
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal mixer image -->
-
-  <div class="modal fade IMG_20170329_082000468" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-          <h4 class="modal-title" id="myLargeModalLabel-1">The main room of  the apartment</h4>
-        </div>
-        <div class="modal-body">
-        <img src="../pictures/puertorico/IMG_20170329_082000468.jpg" class="img-responsive img-rounded center-block expanded" alt="">
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal mixer image -->
-
-  <div class="modal fade IMG_20170329_101252824_HDR" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-          <h4 class="modal-title" id="myLargeModalLabel-1">Another view of the main room of the apartment</h4>
-        </div>
-        <div class="modal-body">
-        <img src="../pictures/puertorico/IMG_20170329_101252824_HDR.jpg" class="img-responsive img-rounded center-block expanded" alt="">
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal mixer image -->
-
-  <div class="modal fade IMG_20170329_225554938" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-          <h4 class="modal-title" id="myLargeModalLabel-1">Julie being silly on the way home</h4>
-        </div>
-        <div class="modal-body">
-        <img src="../pictures/puertorico/IMG_20170329_225554938.jpg" class="img-responsive img-rounded center-block expanded" alt="">
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal mixer image -->
-
-  <div class="modal fade IMG_7708" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-          <h4 class="modal-title" id="myLargeModalLabel-1">A backlit view of one of the statues by the water</h4>
-        </div>
-        <div class="modal-body">
-        <img src="../pictures/puertorico/IMG_7708.JPG" class="img-responsive img-rounded center-block expanded" alt="">
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal mixer image -->
-
-
-</div> <!-- /.row -->
-</div> <!-- /.container -->
-
-    <!-- jQuery -->
-    <script src="../js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="../js/bootstrap.min.js"></script>
-
+  </head>
+  <body>
+
+  <div class="container">
+
+    <h3>Photos from Tim and Julie's trip to San Juan, Puerto Rico</h3>
+    <hr>
+
+    <ul class="row first">
+
+      <li>
+      <img src="../pictures/puertorico/IMG_20170325_134840997_HDR.jpg" width="150" class="img-responsive img-rounded center-block thumb col-lg-2 col-md-3 col-sm-3 col-xs-6" alt="">
+      <p>Airplane lunch picnic!</p>
+      </li>
+
+      <li>
+      <img src="../pictures/puertorico/IMG_20170325_180158290_HDR.jpg" width="150" class="img-responsive img-rounded center-block thumb col-lg-2 col-md-3 col-sm-3 col-xs-6" alt="">
+      <p>The view from our apartment, just after we got there</p>
+      </li>
+
+      <li>
+      <img src="../pictures/puertorico/IMG_20170325_225903878.jpg" width="150" class="img-responsive img-rounded center-block thumb col-lg-2 col-md-3 col-sm-3 col-xs-6" alt="">
+      <p>Evening music party</p>
+      </li>
+
+      <li>
+      <img src="../pictures/puertorico/IMG_20170326_101453311.jpg" width="150" class="img-responsive img-rounded center-block thumb col-lg-2 col-md-3 col-sm-3 col-xs-6" alt="">
+      <p>Julie looking out the window</p>
+      </li>
+
+      <li>
+      <img src="../pictures/puertorico/IMG_20170326_120611750.jpg" width="150" class="img-responsive img-rounded center-block thumb col-lg-2 col-md-3 col-sm-3 col-xs-6" alt="">
+      <p>Flying kites at the fortress</p>
+      </li>
+
+      <li>
+      <img src="../pictures/puertorico/IMG_20170326_123906138.jpg" width="150" class="img-responsive img-rounded center-block thumb col-lg-2 col-md-3 col-sm-3 col-xs-6" alt="">
+      <p>Flying kites at the fortress</p>
+      </li>
+
+      <li>
+      <img src="../pictures/puertorico/IMG_20170326_171707334.jpg" width="150" class="img-responsive img-rounded center-block thumb col-lg-2 col-md-3 col-sm-3 col-xs-6" alt="">
+      <p>One of the colorful streets of San Juan</p>
+      </li>
+
+      <li>
+      <img src="../pictures/puertorico/IMG_20170327_101048234.jpg" width="150" class="img-responsive img-rounded center-block thumb col-lg-2 col-md-3 col-sm-3 col-xs-6" alt="">
+      <p>Lovely flowers from our apartment</p>
+      </li>
+
+      <li>
+      <img src="../pictures/puertorico/IMG_20170327_103009989.jpg" width="150" class="img-responsive img-rounded center-block thumb col-lg-2 col-md-3 col-sm-3 col-xs-6" alt="">
+      <p>The view from breakfast</p>
+      </li>
+
+      <li>
+      <img src="../pictures/puertorico/IMG_20170327_103110328_HDR.jpg" width="150" class="img-responsive img-rounded center-block thumb col-lg-2 col-md-3 col-sm-3 col-xs-6" alt="">
+      <p>The view from our rooftop breakfast</p>
+      </li>
+
+      <li>
+      <img src="../pictures/puertorico/IMG_20170327_111851321.jpg" width="150" class="img-responsive img-rounded center-block thumb col-lg-2 col-md-3 col-sm-3 col-xs-6" alt="">
+      <p>Another colorful street</p>
+      </li>
+
+      <li>
+      <img src="../pictures/puertorico/IMG_20170327_194515537.jpg" width="150" class="img-responsive img-rounded center-block thumb col-lg-2 col-md-3 col-sm-3 col-xs-6" alt="">
+      <p>Our view at night</p>
+      </li>
+
+      <li>
+      <img src="../pictures/puertorico/IMG_20170327_211814143.jpg" width="150" class="img-responsive img-rounded center-block thumb col-lg-2 col-md-3 col-sm-3 col-xs-6" alt="">
+      <p>Julie looking stylish outside the best bar in Puerto Rico</p>
+      </li>
+
+      <li>
+      <img src="../pictures/puertorico/IMG_20170328_104740719.jpg" width="150" class="img-responsive img-rounded center-block thumb col-lg-2 col-md-3 col-sm-3 col-xs-6" alt="">
+      <p>Paletas!</p>
+      </li>
+
+      <li>
+      <img src="../pictures/puertorico/IMG_20170328_111744232_HDR.jpg" width="150" class="img-responsive img-rounded center-block thumb col-lg-2 col-md-3 col-sm-3 col-xs-6" alt="">
+      <p>Julie and Tim at the fortress</p>
+      </li>
+
+      <li>
+      <img src="../pictures/puertorico/IMG_20170328_163134682_HDR.jpg" width="150" class="img-responsive img-rounded center-block thumb col-lg-2 col-md-3 col-sm-3 col-xs-6" alt="">
+      <p>Julie and Tim at the beach</p>
+      </li>
+
+      <li>
+      <img src="../pictures/puertorico/IMG_20170328_163243195.jpg" width="150" class="img-responsive img-rounded center-block thumb col-lg-2 col-md-3 col-sm-3 col-xs-6" alt="">
+      <p>Julie at the beach</p>
+      </li>
+
+      <li>
+      <img src="../pictures/puertorico/IMG_20170328_171307769.jpg" width="150" class="img-responsive img-rounded center-block thumb col-lg-2 col-md-3 col-sm-3 col-xs-6" alt="">
+      <p>We got caught in the rain and met these wild chickens</p>
+      </li>
+
+      <li>
+      <img src="../pictures/puertorico/IMG_20170329_082000468.jpg" width="150" class="img-responsive img-rounded center-block thumb col-lg-2 col-md-3 col-sm-3 col-xs-6" alt="">
+      <p>The main room of the apartment</p>
+      </li>
+
+      <li>
+      <img src="../pictures/puertorico/IMG_20170329_101252824_HDR.jpg" width="150" class="img-responsive img-rounded center-block thumb col-lg-2 col-md-3 col-sm-3 col-xs-6" alt="">
+      <p>Another view of the main room of the apartment</p>
+      </li>
+
+      <li>
+      <img src="../pictures/puertorico/IMG_20170329_225554938.jpg" width="150" class="img-responsive img-rounded center-block thumb col-lg-2 col-md-3 col-sm-3 col-xs-6" alt="">
+      <p>Julie being silly on the way home</p>
+      </li>
+
+      <li>
+      <img src="../pictures/puertorico/IMG_7708.JPG" width="150" class="img-responsive img-rounded center-block thumb col-lg-2 col-md-3 col-sm-3 col-xs-6" alt="">
+      <p>A backlit view of one of the statues by the water</p>
+      </li>
+
+    </ul>
+
+
+  </div>
+  </body>
 </html>

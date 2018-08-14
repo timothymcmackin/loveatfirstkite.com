@@ -142,8 +142,6 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
             // define gallery index (for URL)
             galleryUID: galleryElement.getAttribute('data-pswp-uid'),
 
-            correctOrientation: true,
-
             shareEl: false,
 
             shareButtons: [],

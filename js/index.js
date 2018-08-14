@@ -144,6 +144,8 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 
             correctOrientation: true,
 
+            shareEl: false,
+
             shareButtons: [],
 
             getThumbBoundsFn: function(index) {

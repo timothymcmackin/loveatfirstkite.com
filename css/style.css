@@ -19,6 +19,7 @@
 /* TPM */
 footer {
   font-size: x-small;
+  display: none;
 }
 
 .copyright {
